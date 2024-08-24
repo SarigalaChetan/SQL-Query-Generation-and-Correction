@@ -23,7 +23,7 @@ def process_input(input_text):
 
 dataset = load_dataset("shiroyasha13/llama_text_to_sql_dataset")
 
-num_samples = 17000
+num_samples = 80000
 small_dataset = dataset['train'].select(range(num_samples))
 
 from sklearn.model_selection import train_test_split
